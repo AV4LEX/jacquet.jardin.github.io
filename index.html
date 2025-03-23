@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacquet Jardin - Paysagiste</title>
+    <meta name="description" content="Jacquet Jardin, paysagiste à Orléans, vous accompagne dans la conception, l'aménagement et l'entretien de vos espaces extérieurs. Transformez votre jardin en un lieu harmonieux et personnalisé.">
+    
+    <script src="Frontend/script/slider.js" defer></script>
+    <script src="Frontend/script/menu.js" defer></script>
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="Frontend/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Frontend/styles/tablette.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="Frontend/styles/mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BANNIÈRE -->
+    <header class="banner">
+        <img src="images/banière.png" alt="Bannière du site" class="banner-image">
+        <div class="banner-content">
+            <img src="images/logo_transparent.png" alt="Logo de l'entreprise" class="logo">
+            <p class="slogan">"L’art de votre jardin, cultivé avec passion."</p>
+        </div>
+    </header>
+
+
+    <!-- MENU DE NAVIGATION -->
+<nav class="sticky-menu">
+    <div class="burger-menu">
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+    </div>
+    <ul class="hidden">
+        <li><a href="#presentation">PRÉSENTATION</a></li>
+        <li><a href="#conception">CONCEPTION</a></li>
+        <li><a href="#amenagement">AMÉNAGEMENT</a></li>
+        <li><a href="#entretien">ENTRETIEN</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+
+
+
+    <!-- CARROUSEL -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide"><img src="images/libre_de_droits_1.jpg" alt="Image 1"></div>
+            <div class="carousel-slide"><img src="images/paysagiste.jpg" alt="Image 2"></div>
+            <div class="carousel-slide"><img src="images/exemple.jpg" alt="Image 3"></div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+
+
+    <!-- SECTION PRÉSENTATION -->
+<section id="presentation">
+    <div class="presentation-banner">
+        <h2>PRÉSENTATION</h2>
+    </div>
+    <div class="presentation-content">
+        <div class="presentation-text">
+            <p>
+                Paysagiste passionné, je mets mon expertise à votre service pour la conception, l’aménagement et l'entretien de jardins. 
+                Je vous accompagne dans la réalisation de votre projet en créant un espace agréable et harmonieux.
+                <br><br>
+                Que ce soit pour transformer un petit coin de verdure, aménager un espace plus vaste ou entretenir votre jardin, 
+                je vous guide de manière personnalisée et authentique.
+                <br><br>
+                <span class="third-part">Je suis là pour vous écouter, vous conseiller et faire de votre projet un véritable lieu de vie, à votre image. 
+                    Si vous avez un projet en tête, n’hésitez pas à me contacter, je serai ravi de le concrétiser avec vous !</span>
+            </p>
+        </div>
+        <div class="presentation-image">
+            <img src="images/palm.png" alt="Plante">
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- SECTION CONCEPTION -->
+<section id="conception">
+    <div class="presentation-banner">
+        <h2>SERVICES</h2>
+    </div>
+    <div class="service-icons">
+        <div class="service">
+            <img src="images/conseil.svg" alt="Pictogramme Écoute et conseils">
+            <p>Écoute et conseils</p>
+        </div>
+        <div class="service">
+            <img src="images/conception.svg" alt="Pictogramme Conception">
+            <p>Conception</p>
+        </div>
+        <div class="service">
+            <img src="images/entretien.svg" alt="Pictogramme Entretien">
+            <p>Entretien</p>
+        </div>
+        <div class="service">
+            <img src="images/amenagement.png" alt="Pictogramme Aménagement">
+            <p>Aménagement</p>
+        </div>
+        <div class="service">
+            <img src="images/elagage.svg" alt="Pictogramme Élagage">
+            <p>Élagage</p>
+        </div>
+    </div>
+
+    <!-- Conteneur conception -->
+    <div class="conception-content">
+        <div class="image-container">
+            <img src="images/plan1.png" alt="Image Conception" class="disable">
+        </div>
+        <div class="text-container">
+            <h3>CONCEPTION 🌱</h3>
+            <p>Chaque jardin commence par une idée. Je vous accompagne dans la création d’un espace extérieur qui vous ressemble, en tenant compte de vos envies, de votre terrain et de son environnement. Plans, choix des végétaux et des matériaux... Chaque détail est pensé pour un jardin harmonieux et fonctionnel.</p>
+        </div>
+    </div>
+
+    <!-- Conteneur aménagement -->
+    <div class="amenagement-content" id="amenagement">
+        <div class="image-amenagement">
+            <img src="images/Aménagement-paysager.png" alt="Image Aménagement" class="disable">
+        </div>
+        <div class="text-amenagement">
+            <h3>AMÉNAGEMENT 🏡</h3>
+            
+            <p>L’aménagement, c’est transformer vos idées en un espace extérieur agréable et harmonieux. Que ce soit la création d’allées, de terrasses, de massifs ou de points d’eau, chaque élément est pensé pour s’intégrer parfaitement à votre environnement et répondre à vos besoins.</p>
+        </div>
+    </div>
+
+    <!-- Conteneur entretien -->
+    <div class="entretien-content" id="entretien">
+        <div class="image-entretien">
+            <img src="images/taille-haie-voisin.png" alt="Image Conception" class="disable">
+        </div>
+        <div class="text-entretien">
+            <h3>ENTRETIEN 🌿</h3>
+            <p>Un jardin bien entretenu, c’est un jardin qui s’épanouit au fil des saisons. Tonte, taille, élagage, soin des végétaux… J’interviens pour préserver la beauté et la santé de votre espace vert, en assurant une croissance optimale et un entretien soigné, afin qu’il reste agréable toute l'année.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION CONTACT -->
+<section id="contact">
+    <div class="contact-banner">
+        <h2>CONTACT</h2>
+    </div>
+    <div class="contact-content">
+        <div class="contact-text">
+            <p class="text-contact">Vous avez un projet en tête ou des questions ? <br><br>N’hésitez pas à me contacter, je serai ravi de discuter avec vous de vos besoins et de vous accompagner dans votre projet.</p>
+        </div>
+        <div class="contact-image">
+            <img src="images/palm.png" alt="Plante">
+        </div>
+    </div>
+
+    <!-- Infos Contact -->
+    <div class="contact-info">
+        <p>Jacquet Romain (Gérant)<br>
+        Téléphone : 06.74.87.04.82<br>
+        ton-email@gmail.com<br>
+        Orléans (45)</p>
+    </div>
+
+    <!-- Bouton Contact -->
+    <div class="contact-btn-container">
+        <a href="mailto:votreemail@example.com" class="contact-btn">Contactez-moi</a>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="images/banière.png" alt="Bannière du site" class="banner-footer">
+        <div class="footer-content">
+            <img src="images/logo_transparent.png" alt="Logo de l'entreprise" class="logo-footer">
+        </div>
+        <p class="footer-rights">© 2024 Jacquet Jardin | Développement web par CREAVITY - Tous droits réservés</p>
+    </footer>
+
+
+</body>
+</html>
