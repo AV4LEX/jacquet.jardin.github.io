@@ -157,18 +157,17 @@
     }
 
     .contact-text {
-        font-size: 16px; /* Ajuster la taille du texte */
-        margin: 0;
-        padding-right: 20px; 
+        font-size: 16px; 
+        margin: 0; 
         margin-bottom: 40px;
-        margin-top: 0px;
+        margin-top: 30px;
         max-width: 100%; 
         text-align: left; 
     }
 
     .contact-info {
         font-size: 16px; 
-        margin-top: 0px; 
+        margin-top: -20px; 
         padding: 0 15px; 
     }
 
@@ -179,7 +178,7 @@
 
     .contact-btn-container {
         text-align: center;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .contact-btn {
