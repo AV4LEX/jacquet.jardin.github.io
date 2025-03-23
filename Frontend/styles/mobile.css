@@ -48,6 +48,10 @@
         font-size: 20px;
     }
 
+    .presentation-text p{
+        padding-left: 20px;
+    }
+
     .third-part {
         display: none; 
     }
