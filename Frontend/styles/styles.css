@@ -1,0 +1,629 @@
+/* Import des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Klee+One&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px; 
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0; 
+    font-family: 'Inter', sans-serif;
+    background-color: #bdbdbd;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+
+p, h3 {
+    font-family: 'Klee One', cursive;
+}
+
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; 
+}
+
+
+ul {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* BANNIÈRE */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    max-height: 186px;
+    display: block;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* LOGO */
+.logo {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-55%);
+    z-index: 2; 
+}
+
+/* SLOGAN */
+.slogan {
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45%, -140%);
+    z-index: 1; 
+    white-space: nowrap;
+}
+
+/* MENU STICKY */
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #B9926E, #534231); 
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1); 
+    z-index: 2500;
+    width: 100%;
+    min-height: 40px;
+}
+
+.sticky-menu ul {
+    list-style: none;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0; 
+    padding: 0; 
+    height: 50px; 
+    width: 100%;
+}
+
+.sticky-menu li {
+    margin: 0;
+    flex-grow: 1; 
+    text-align: center; 
+    position: relative;
+    width: 100%;
+}
+
+.sticky-menu a {
+    text-decoration: none; 
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    color: white; 
+    padding: 15px 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    position: relative;
+}
+
+
+.sticky-menu a:hover {
+    background-color: white; 
+    color: black; 
+    height: auto;
+}
+
+/* BURGER MENU (Caché par défaut) */
+.burger-menu {
+    display: none; 
+    cursor: pointer;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    font-size: 30px;
+    transform: translate(-50%, -50%); 
+}
+
+
+
+/* CARROUSEL */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 30px 40px; 
+    cursor: pointer;
+    font-size: 60px; 
+    width: 70px; 
+    height: 70px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background: none; 
+    border: none; 
+    transition: all 0.3s ease; 
+}
+
+.prev:hover, .next:hover {
+    transform: translateY(-50%) scale(1.2); 
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
+/* SECTION PRÉSENTATION */
+#presentation {
+    background-color: #D9D9D9;
+    height: 500px;
+    position: relative;
+}
+
+#presentation p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+/* BANNIÈRE PRÉSENTATION */
+.presentation-banner {
+    background: linear-gradient(90deg, #B9926E, #534231);
+    padding: 13px 0;
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+.presentation-banner h2 {
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Contenu de la présentation */
+.presentation-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.presentation-text {
+    width: 60%;
+    font-size: 20px;
+}
+
+.presentation-text p {
+    margin: 0;
+    padding-left: 60px;
+}
+
+
+.presentation-image {
+    width: 50%;
+    position: absolute; 
+    top: 47px; 
+    right: 0; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.presentation-image img {
+    width: 100%;  
+    max-width: 80%; 
+    height: auto;  
+    object-fit: cover;
+}
+
+#presentation .presentation-content {
+    margin-right: 0;
+}
+
+
+
+/* SECTION CONCEPTION */
+#conception {
+    background-color: #D9D9D9;
+    
+}
+
+#conception .presentation-banner {
+    background: linear-gradient(90deg, #B9926E, #534231);
+    padding: 13px 0;
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+#conception .presentation-banner h2 {
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    margin: 0;
+}
+
+.conception-content {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+/* ICÔNES DE SERVICES */
+.service-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+}
+
+.service img {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    
+}
+
+.service p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+.conception-content {
+    display: flex;
+    background-color: #223B3F;
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    color: white;
+    gap: 100px;
+}
+
+.image-container {
+    flex: 2;
+    padding-right: 20px;
+    
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+}
+
+.text-container {
+    flex: 2;
+    max-width: 650px;
+    margin-right: 100px;
+    padding-top: 50px;
+
+}
+
+.text-container h3 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify; 
+}
+
+
+/* Conteneur aménagement */
+.amenagement-content {
+    display: flex;
+    gap: 50px;
+    padding-top: 40px;
+    color: black;
+    flex-direction: row-reverse; 
+}
+
+.image-amenagement {
+    flex: 2;
+    padding-left: 20px; 
+}
+
+.image-amenagement img {
+    width: 100%;
+    height: auto;
+}
+
+.text-amenagement {
+    flex: 2;
+    max-width: 650px;
+    margin-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.text-amenagement h3 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.text-amenagement p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* Conteneur avec fond 223B3F, image à gauche et texte à droite */
+.entretien-content {
+    display: flex;
+    background-color: #223B3F;
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    color: white;
+    gap: 100px;
+}
+
+.image-entretien {
+    flex: 2;
+    padding-right: 20px;
+    
+}
+
+.image-entretien img {
+    width: 100%; 
+    height: auto;
+}
+
+.text-entretien {
+    flex: 2;
+    max-width: 650px;
+    margin-right: 100px;
+    padding-top: 50px;
+
+}
+
+.text-entretien h3 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.text-entretien p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify; 
+}
+
+
+
+/* SECTION CONTACT */
+#contact {
+    background-color: #D9D9D9;
+    padding-bottom: 40px;
+    height: auto;
+}
+
+/* BANNIÈRE CONTACT */
+#contact .contact-banner {
+    background: linear-gradient(90deg, #B9926E, #534231);
+    padding: 13px 0;
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#contact .contact-banner h2 {
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Contenu de la section contact */
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+/* Texte contact */
+.contact-text {
+    max-width: 60%;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+.contact-text p {
+    margin: 0;
+}
+
+/* Image contact */
+.contact-image {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.contact-info {
+    text-align: center;
+    font-size: 18px; 
+    padding: 0 20px; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    margin-top: -100px;
+}
+
+
+/* Bouton de contact */
+.contact-btn-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #223B3F;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn:focus {
+    outline: none;
+}
+
+
+footer {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    position: relative;
+    background-color: #223B3F; 
+    padding: 0;
+}
+
+.banner-footer {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; 
+    position: relative;
+    z-index: 2; 
+}
+
+.logo-footer {
+    width: 200px;
+    height: auto;
+    transform: translateY(10%); 
+}
+
+.footer-rights {
+    font-size: 14px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+    color: white; 
+}
+
+

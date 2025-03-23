@@ -1,0 +1,184 @@
+/* VERSION TABLETLE / banniere */
+@media (max-width: 768px) {
+    .banner {
+        width: 100%;
+        height: 150px;
+    }
+
+    .logo{
+        min-width: 150px;
+        max-width: 180px;
+    }
+
+    .banner-image {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+
+}
+
+/* CARROUSEL POUR MOBILE */
+@media (max-width: 768px) {
+    .carousel {
+        height: 450px; 
+    }
+
+    .prev, .next {
+        padding: 20px 30px; 
+        font-size: 40px; 
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* Masque l'image en version mobile (écrans < 768px) */
+@media (max-width: 768px) {
+    #presentation{
+        height: auto;
+    }
+    .presentation-image {
+        display: none; 
+    }
+
+    .presentation-text {
+        width: 90%;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .third-part {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .service img {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 50px;
+        height: 50px;   
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    /* On repasse en colonne et on centre tout */
+    .conception-content,
+    .amenagement-content,
+    .entretien-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: right; 
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Cacher les images */
+    .conception-content img,
+    .amenagement-content img,
+    .entretien-content img {
+        display: none;
+    }
+
+    /* Centrage du conteneur texte */
+    .text-container,
+    .text-amenagement,
+    .text-entretien {
+        max-width: 100%; 
+        margin: 0 auto; 
+        padding: 0;
+    }
+
+    /* Ajustement des titres */
+    .text-container h3,
+    .text-amenagement h3,
+    .text-entretien h3 {
+        text-align: left; 
+        font-size: 22px;
+    }
+
+    /* Justifier le texte mais en l'alignant à droite */
+    .text-container p,
+    .text-amenagement p,
+    .text-entretien p {
+        text-align: left; 
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    .text-container p,
+    .text-entretien p {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+/* Afficher les icônes uniquement sur les écrans mobiles (moins de 768px) */
+@media (max-width: 768px) {
+    .mobile {
+        display: inline-block; 
+        margin-left: 10px; 
+        font-size: 20px; 
+    }
+    
+    /* Alignement du texte et icône sur mobile */
+    .conception-content .text-container h3,
+    .amenagement-content .text-amenagement h3,
+    .entretien-content .text-entretien h3 {
+        display: flex;
+        align-items: center;
+    }
+
+    .conception-content .text-container h3 i,
+    .amenagement-content .text-amenagement h3 i,
+    .entretien-content .text-entretien h3 i {
+        margin-left: 10px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Section contact */
+    .contact-content {
+        width: 100%;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        padding: 20px; 
+    }
+
+    .contact-image img {
+        display: none; 
+    }
+
+    .contact-text {
+        font-size: 16px; /* Ajuster la taille du texte */
+        margin: 0;
+        padding-right: 20px; 
+        margin-bottom: 40px;
+        margin-top: 20px;
+        max-width: 100%; 
+        text-align: left; 
+    }
+
+    .contact-info {
+        font-size: 16px; 
+        margin-top: 15px; 
+        padding: 0 15px; 
+    }
+
+    .contact-btn-container {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .contact-btn {
+        padding: 12px 25px; 
+        font-size: 16px; 
+    }
+}
