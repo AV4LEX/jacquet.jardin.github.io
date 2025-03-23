@@ -182,3 +182,13 @@
         font-size: 16px; 
     }
 }
+
+
+@media (max-width: 768px) {
+    /* Section footer */
+
+    .footer-rights{
+        margin-top: 20px;
+    }
+    
+}
