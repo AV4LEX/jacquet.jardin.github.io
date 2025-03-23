@@ -551,6 +551,14 @@ ul {
     margin-top: -100px;
 }
 
+/* Section contact-icon positionnée au-dessus de contact-info */
+.contact-icon {
+    width: 60px;
+    height: auto;
+    margin: 0 auto 40px; 
+    display: block; 
+}
+
 
 /* Bouton de contact */
 .contact-btn-container {
@@ -582,6 +590,9 @@ ul {
 .contact-btn:focus {
     outline: none;
 }
+
+
+
 
 
 footer {

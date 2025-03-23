@@ -180,6 +180,13 @@
         margin-top: 0px;
     }
 
+    .contact-icon {
+        width: 60px;
+        height: auto;
+        margin: 20px auto 20px; 
+        display: block; 
+    }
+
     .contact-btn-container {
         text-align: center;
         margin-top: 40px;
@@ -189,6 +196,7 @@
         padding: 12px 25px; 
         font-size: 18px; 
     }
+
 }
 
 
