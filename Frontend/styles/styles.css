@@ -222,13 +222,14 @@ ul {
 /* SECTION PRÉSENTATION */
 #presentation {
     background-color: #D9D9D9;
-    height: 500px;
+    height: auto;
     position: relative;
 }
 
 #presentation p {
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 /* BANNIÈRE PRÉSENTATION */
@@ -255,6 +256,7 @@ ul {
     justify-content: space-between;
     width: 100%;
     height: auto;
+
 }
 
 .presentation-text {
@@ -356,9 +358,9 @@ ul {
     -webkit-backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.3); 
     text-align: center;
-    width: 200px;
+    width: 300px;
     padding: 20px;
-    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s linear, box-shadow 0.3s ease;
     cursor: pointer;
 
     /* Centrage vertical */
@@ -562,7 +564,6 @@ ul {
     max-width: 60%;
     font-size: 18px;
     margin-left: 100px;
-    margin-top: -100px;
 }
 
 .contact-text p {
@@ -574,6 +575,7 @@ ul {
     width: 40%;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: -70px;
 }
 
 .contact-image img {
@@ -584,21 +586,59 @@ ul {
 
 
 
-.contact-info {
-    text-align: center;
-    font-size: 18px; 
-    padding: 0 20px; 
-    max-width: 100%; 
-    box-sizing: border-box; 
-    margin-top: -100px;
+/* Carte de contact */
+.contact-card {
+    background: rgba(255, 255, 255, 0.25); 
+    border-radius: 32px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    max-width: 400px; /* Limite la largeur max */
+    width: 100%; /* Utilise 100% de la largeur disponible */
+    padding: 20px;
+    transition: transform 0.3s linear, box-shadow 0.3s ease;
+    cursor: pointer;
+
+    /* Centrage vertical et horizontal */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+    text-decoration: none;
 }
 
-/* Section contact-icon positionnée au-dessus de contact-info */
+.contact-card:hover {
+    transform: translateY(-5px); /* Légère animation lors du survol */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+/* Icone de contact */
 .contact-icon {
     width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.contact-icon img {
+    width: 100%;
     height: auto;
-    margin: 0 auto 40px; 
-    display: block; 
+}
+
+/* Texte d'info de contact */
+.contact-info p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+.contact-info p strong {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 

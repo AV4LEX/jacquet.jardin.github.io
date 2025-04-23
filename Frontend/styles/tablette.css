@@ -99,6 +99,8 @@
 
 
 
+
+
 @media (max-width: 1024px) {
     #presentation{
         height: auto;
@@ -106,12 +108,9 @@
 
     #presentation p {
         font-size: 18px;
-        margin-top: 40px;
     }
 
-    .presentation-text{
-        margin-bottom: 40px !important;
-    }
+
 
     .third-part {
         display: none; 
@@ -119,15 +118,29 @@
 }
 
 
-
 @media (max-width: 1024px) {
-
-    .contact-text{
-        margin-left: 40px;
+    .contact-card {
+        max-width: 370px; 
+        flex-direction: row; 
+        padding: 20px 20px; 
+        margin-bottom: 50px;
+        margin-top: 70px;
     }
 
-    .contact-info p{
-        padding: 20px;
+    .contact-icon {
+        margin-bottom: 20px; /* Espacement sous l'icône */
+        margin-right: 20px; /* Supprimer l'espace à droite sur mobile */
+    }
 
+    .contact-text {
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 }
+
+@media (max-width: 950px) {
+    .contact-image img {
+        display: none; 
+    }
+}
+
