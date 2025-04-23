@@ -37,6 +37,7 @@
 }
 
 
+
 /* VERSION TABLETLE / menu */
 @media (max-width: 1024px) {
     .sticky-menu ul {
@@ -99,9 +100,21 @@
 
 
 @media (max-width: 1024px) {
+    #presentation{
+        height: auto;
+    }
+
     #presentation p {
         font-size: 18px;
         margin-top: 40px;
+    }
+
+    .presentation-text{
+        margin-bottom: 40px !important;
+    }
+
+    .third-part {
+        display: none; 
     }
 }
 
