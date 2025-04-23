@@ -132,9 +132,10 @@
         margin-right: 20px; /* Supprimer l'espace à droite sur mobile */
     }
 
-    .contact-text {
-        margin-bottom: 50px;
-        margin-top: 50px;
+    .contact-intro {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding: 0;
     }
 }
 
