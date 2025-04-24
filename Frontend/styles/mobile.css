@@ -245,9 +245,9 @@
         padding-top: 15px;
     }
 
-    .contact-intro h3 {
+    .contact-intro{
 
-        margin-top: -20px;
+        margin-top: -10px;
         margin-bottom: -30px;
     }
 }
