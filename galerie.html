@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Jacquet Jardin</title>
+    <meta name="description" content="Découvrez en images les réalisations de Jacquet Jardin, paysagiste à Orléans : aménagements extérieurs, entretiens, créations paysagères.">
+    
+    <script src="Frontend/script/menu.js" defer></script>
+    <script src="Frontend/script/menu.js" defer></script>
+<script src="Frontend/script/galerie.js" defer></script>
+
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="Frontend/styles/styles.css">
+    <link rel="stylesheet" href="Frontend/styles/galerie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Frontend/styles/tablette.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="Frontend/styles/mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BANNIÈRE -->
+    <header class="banner">
+        <img src="images/banière.png" alt="Bannière du site" class="banner-image">
+        <div class="banner-content">
+            <img src="images/logo_transparent.png" alt="Logo de l'entreprise" class="logo">
+            <p class="slogan">"L’art de votre jardin, cultivé avec passion."</p>
+        </div>
+    </header>
+
+    <!-- MENU DE NAVIGATION -->
+    <nav class="sticky-menu">
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+        <ul class="hidden">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="index.html#conception">SERVICES</a></li>
+            <li><a href="index.html#entretien">CONSEILS</a></li>
+            <li><a href="#galerie">GALERIE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION GALERIE -->
+    <section id="galerie">
+        <div class="galerie-banner">
+            <h2>RÉALISATIONS</h2>
+            <p class="galerie-seo">
+                Retrouvez ici des photos de mes réalisations de projets de paysagisme, d’aménagements extérieurs et d’entretiens de jardins à Orléans et ses alentours. 🌿
+            </p>
+        </div>
+        <div class="filtre-btns">
+            <button class="filtre-btn" data-filter="amenagement">Aménagement</button>
+            <button class="filtre-btn" data-filter="entretien">Entretien</button>
+            <button class="filtre-btn" data-filter="sculpture">Sculptures</button>
+            <button class="filtre-btn" data-filter="conception">Conception</button>
+            <button class="filtre-btn" data-filter="all">Tout afficher</button>
+          </div>
+        <section id="galerie">
+            <div class="galerie-grid">
+                <div class="galerie-card" data-category="amenagement">
+                    <img src="images/libre_de_droits_1.jpg" alt="Aménagement paysager à Orléans">
+                    <h3>Aménagement paysager</h3>
+                </div>
+                <div class="galerie-card" data-category="amenagement">
+                    <img src="images/paysagiste.jpg" alt="Création de massif floral">
+                    <h3>Massif floral</h3>
+                </div>
+                <div class="galerie-card" data-category="amenagement">
+                    <img src="images/exemple.jpg" alt="Entretien de jardin à Orléans">
+                    <h3>Entretien jardin</h3>
+                </div>
+                <div class="galerie-card" data-category="entretien">
+                    <img src="images/entretient_jardin.jpg" alt="Pose de pelouse">
+                    <h3>Pelouse</h3>
+                </div>
+                <div class="galerie-card" data-category="entretien">
+                    <img src="images/entretient_jardin_2.jpeg" alt="Création d’allée de jardin">
+                    <h3>Allée de jardin</h3>
+                </div>
+                <div class="galerie-card" data-category="entretien">
+                    <img src="images/entretient_jardin_3.webp" alt="Plantation d’arbustes">
+                    <h3>Plantation d’arbustes</h3>
+                </div>
+                <div class="galerie-card" data-category="sculpture">
+                    <img src="images/sculpture_1.jpg" alt="Pose de pelouse">
+                    <h3>Pelouse</h3>
+                </div>
+                <div class="galerie-card" data-category="sculpture">
+                    <img src="images/sculpture_2.jpg" alt="Création d’allée de jardin">
+                    <h3>Allée de jardin</h3>
+                </div>
+                <div class="galerie-card" data-category="sculpture">
+                    <img src="images/sculpture_3.webp" alt="Plantation d’arbustes">
+                    <h3>Plantation d’arbustes</h3>
+                </div>
+                <div class="galerie-card" data-category="conception">
+                    <img src="images/conception_1.jpg" alt="Pose de pelouse">
+                    <h3>Pelouse</h3>
+                </div>
+                <div class="galerie-card" data-category="conception">
+                    <img src="images/conception_2.jpg" alt="Création d’allée de jardin">
+                    <h3>Allée de jardin</h3>
+                </div>
+                <div class="galerie-card" data-category="conception">
+                    <img src="images/conception_3.jpg" alt="Plantation d’arbustes">
+                    <h3>Plantation d’arbustes</h3>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <div class="contact-banner">
+            <h2>CONTACT</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-image">
+                <img src="images/palm.png" alt="Plante décorative">
+            </div>
+        </div>
+
+        <div class="contact-intro">
+            <p>Échangeons autour de votre projet 🌱<br>Je suis à votre écoute pour toute question ou demande.</p>
+        </div>
+        <a href="mailto:votreemail@example.com" class="contact-card">
+            <div class="contact-icon">
+                <img src="images/envelope-regular.svg" alt="contact">
+            </div>
+            <div class="contact-info">
+                <p><strong>Jacquet Romain (Gérant)</strong><br>
+                Téléphone : 06.74.87.04.82<br>
+                Email : ton-email@gmail.com<br>
+                Orléans (45)</p>
+            </div>
+        </a>
+
+        <div class="contact-btn-container">
+            <a href="mailto:votreemail@example.com" class="contact-btn">Lancez votre projet</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="images/banière.png" alt="Bannière du site" class="banner-footer">
+        <div class="footer-content">
+            <img src="images/logo_transparent.png" alt="Logo de l'entreprise" class="logo-footer">
+        </div>
+        <p class="footer-rights">© 2024 Jacquet Jardin | Développement web par CREAVITY - creavity.web@gmail.com - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
