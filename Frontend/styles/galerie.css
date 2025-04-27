@@ -127,6 +127,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+.contact-banner h2{
+    font-size: 18px !important;
+}
+
 /* Version mobile : Ajuster la hauteur des cartes */
 @media (max-width: 768px) {
     .galerie-card {
