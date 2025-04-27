@@ -6,6 +6,11 @@ const closeBtn = document.getElementById('close-btn'); // Le bouton de fermeture
 // Sélectionner toutes les images dans la galerie
 const galerieImages = document.querySelectorAll('.galerie-card img');
 
+// Fermer la modale au chargement de la page (au cas où il serait ouvert par erreur)
+window.addEventListener('load', () => {
+    modal.style.display = 'none'; // Masquer la modale au chargement
+});
+
 // Fonction pour ouvrir la modale et afficher l'image
 galerieImages.forEach(image => {
     image.addEventListener('click', () => {
@@ -25,3 +30,4 @@ modal.addEventListener('click', (e) => {
         modal.style.display = 'none'; // Masquer la modale
     }
 });
+

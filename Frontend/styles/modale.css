@@ -1,4 +1,8 @@
 /* Modale */
+#modal{
+    display: none;
+}
+
 .modal {
     display: none;
     position: fixed;
