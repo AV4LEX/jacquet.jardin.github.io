@@ -628,7 +628,7 @@ ul {
 
 .contact-intro {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     margin-top: -50px;
     padding: 20px;
     font-size: 24px;
@@ -707,6 +707,19 @@ ul {
 
 .contact-btn:focus {
     outline: none;
+}
+
+.mail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mail {
+    font-size: 18px;
+    font-weight: 500;
+    color: #223B3F;
 }
 
 
