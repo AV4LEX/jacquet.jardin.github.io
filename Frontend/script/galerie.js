@@ -16,17 +16,26 @@ document.addEventListener("DOMContentLoaded", () => {
             card.style.display = shouldShow ? 'block' : 'none';
 
             if (shouldShow) {
+                // Désactive le hover en ajoutant la classe no-hover
+                card.classList.add('no-hover');
+
                 setTimeout(() => {
                     card.classList.add('visible');
-                }, 10); // Juste pour déclencher l'animation CSS
+                    
+                    // Retire la classe "no-hover" une fois l'animation terminée
+                    card.addEventListener('animationend', () => {
+                        card.classList.remove('visible');
+                        card.classList.remove('no-hover');
+                    }, { once: true });
+                }, 10); // Petite pause pour bien déclencher l'animation
             }
         });
     };
 
-    // Init
+    // Init au chargement
     showCards('all');
 
-    // Event listeners
+    // Event listeners sur les boutons
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             const filter = button.getAttribute('data-filter');

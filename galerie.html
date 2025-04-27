@@ -7,6 +7,7 @@
     <meta name="description" content="Découvrez en images les réalisations de Jacquet Jardin, paysagiste à Orléans : aménagements extérieurs, entretiens, créations paysagères.">
     
     <script src="Frontend/script/menu.js" defer></script>
+    <script src="Frontend/script/modale.js" defer></script>
     <script src="Frontend/script/menu.js" defer></script>
 <script src="Frontend/script/galerie.js" defer></script>
 
@@ -14,6 +15,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="Frontend/styles/styles.css">
     <link rel="stylesheet" href="Frontend/styles/galerie.css">
+    <link rel="stylesheet" href="Frontend/styles/modale.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Klee+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Frontend/styles/tablette.css" media="(max-width: 1024px)">
     <link rel="stylesheet" href="Frontend/styles/mobile.css" media="(max-width: 768px)">
@@ -59,6 +61,21 @@
             <button class="filtre-btn" data-filter="conception">Conception</button>
             <button class="filtre-btn" data-filter="all">Tout afficher</button>
           </div>
+
+        <!-- Image Modale -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <!-- Fermeture de la modale -->
+                <span class="close-btn" id="close-btn">&times;</span>
+                <!-- Conteneur pour l'image -->
+                <div class="modal-image-container">
+                    <img src="" id="modal-image" class="modal-image" alt="Image en grand format">
+                </div>
+            </div>
+        </div>
+
+
+
         <section id="galerie">
             <div class="galerie-grid">
                 <div class="galerie-card" data-category="amenagement">
