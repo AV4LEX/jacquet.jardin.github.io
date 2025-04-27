@@ -221,6 +221,7 @@
     }
 
     .contact-btn {
+        width: 250px;
         padding: 12px 20px; 
         font-size: 18px; 
     }
