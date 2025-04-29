@@ -88,7 +88,8 @@
     flex-direction: column;
     justify-content: space-between;
     height: 280px;
-    background: white; 
+    background: rgba(255, 255, 255, 0.7);
+
     border-radius: 32px;
     overflow: visible; /* <-- CHANGE overflow hidden en visible pour que l'ombre s'affiche */
     cursor: pointer;
@@ -133,16 +134,30 @@
 
 /* Version mobile : Ajuster la hauteur des cartes */
 @media (max-width: 768px) {
+    
+    .galerie-seo {
+        text-align: start;
+        max-width: 800px;
+        margin: 20px auto;
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 20px;
+    }
+
+    .galerie-grid {
+        padding-top: 40px; 
+    }
+
     .galerie-card {
-        height: 200px; /* Réduire la hauteur des cartes sur mobile */
+        height: 200px; 
     }
 
     .galerie-card img {
-        height: 77%; /* Réduire la taille de l'image sur mobile */
+        height: 77%; 
     }
 
     .galerie-card h3 {
-        font-size: 18px; /* Réduire la taille de la police du titre sur mobile */
+        font-size: 18px; 
     }
 
     .filtre-btns {

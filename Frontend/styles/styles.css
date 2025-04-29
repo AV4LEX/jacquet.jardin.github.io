@@ -676,6 +676,8 @@ ul {
     height: 60px;
     margin-bottom: 20px;
     margin-right: 40px;
+    max-width: 60px;
+    max-height: 60px;
 }
 
 .contact-icon img {
@@ -722,6 +724,14 @@ ul {
     color: #223B3F;
 }
 
+/* Masquer le lien téléphonique par défaut */
+.tel-link {
+    display: none;
+}
+
+.email-link{
+    display: flex;
+}
 
 
 

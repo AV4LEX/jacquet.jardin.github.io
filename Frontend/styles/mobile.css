@@ -56,6 +56,8 @@
     }
 }
 
+
+
 @media (max-width: 768px) {
     .service img {
         margin-top: 50px;
@@ -221,7 +223,7 @@
     }
 
     .contact-btn {
-        width: 250px;
+        width: 220px;
         padding: 12px 20px; 
         font-size: 18px; 
     }
@@ -238,12 +240,12 @@
     }
 
     .contact-icon {
-        margin-bottom: 20px; /* Espacement sous l'icône */
-        margin-right: 0; /* Supprimer l'espace à droite sur mobile */
+        margin-bottom: 20px; 
+        margin-right: 0; 
     }
 
     .contact-info p {
-        font-size: 16px; /* Ajuster la taille du texte sur mobile */
+        font-size: 16px; 
         padding-top: 15px;
     }
 
@@ -255,6 +257,30 @@
 
     .mail-container {
         margin-top: 30px;
+    }
+
+    .mail{
+        display: none;
+    }
+}
+
+
+/* Afficher le lien mail uniquement sur desktop */
+@media (min-width: 1024px) {
+    .email-link {
+        display: flex;
+    }
+
+}
+
+/* Afficher le lien téléphone uniquement sur mobile */
+@media (max-width: 768px) {
+    .tel-link {
+        display: flex;
+    }
+
+    .email-link{
+        display: none;
     }
 }
 
