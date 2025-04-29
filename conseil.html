@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseils - Jacquet Jardin</title>
+    <meta name="description" content="Paysagiste à Orléans : conseils et services pour un jardin sain et durable. Taille, tonte, paillage, arrosage, élagage.">
+
+
+    <script src="Frontend/script/menu.js" defer></script>
+    <script src="Frontend/script/galerie.js" defer></script>
+    <script src="Frontend/script/conseil.js" defer></script>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="Frontend/styles/styles.css">
+    <link rel="stylesheet" href="Frontend/styles/galerie.css">
+    <link rel="stylesheet" href="Frontend/styles/conseil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Frontend/styles/tablette.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="Frontend/styles/mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- BANNIÈRE -->
+<header class="banner">
+    <img src="images/banière.png" alt="Bannière du site" class="banner-image">
+    <div class="banner-content">
+        <a href="index.html">
+            <img src="images/logo_transparent.png" alt="Logo de l'entreprise" class="logo">
+        </a>
+        <p class="slogan">"L’art de votre jardin, cultivé avec passion."</p>
+    </div>
+</header>
+
+<!-- MENU DE NAVIGATION -->
+<nav class="sticky-menu">
+    <div class="burger-menu">
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+    </div>
+    <ul class="hidden">
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="index.html#presentation">PRÉSENTATION</a></li>
+        <li><a href="index.html#conception">SERVICES</a></li>
+        <li><a href="conseil.html">CONSEILS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- SECTION Introduction conseils -->
+<section class="intro-section">
+    <div class="intro-content">
+      <h2>Bienvenus dans votre espace conseils 🌱</h2>
+      <p>Découvrez des astuces et des idées pratiques pour entretenir votre jardin, optimiser votre espace vert, et rendre votre environnement encore plus agréable. De l’élagage des arbres aux conseils pour améliorer la santé de vos plantes, vous trouverez des informations utiles pour tous vos projets verts.</p>
+    </div>
+    <div class="conseil-image">
+        <img src="images/palm.png" alt="Plante">
+    </div>
+    <div class="see-works-btn-container">
+        <a href="galerie.html" class="contact-btn">Voir mes réalisations</a>
+    </div>
+  </section>
+
+  <div class="presentation-banner">
+    <h2>ARTICLES</h2>
+</div>
+
+<!-- SECTION CONSEILS -->
+<section id="entretien" class="conseils-section">
+
+    <!-- Bloc 1 : Introduction -->
+    <article class="conseil-bloc-white">
+      <div class="image">
+        <img src="images/jardin_vivant.jpg" alt="Jardin vivant">
+      </div>
+      <div class="titre-et-texte">
+        <h2>Mes conseils pour un jardin vivant, bien pensé et durable</h2>
+        <p class="preview">Parce qu’un jardin ne se limite pas à sa beauté, mais reflète aussi le soin, l’intention et l’expérience qu’on y met, voici quelques repères utiles ...</p>
+        <button class="open-modal" data-modal="modal-intro">En savoir plus</button>
+      </div>
+    </article>
+  
+    <!-- Bloc 2 : Conception -->
+    <article class="conseil-bloc-green">
+        <div class="image">
+            <img src="images/conception_jardin.jpg" alt="Conception jardin">
+          </div>
+      <div class="titre-et-texte">
+        <h3>Conception : penser son jardin dans la durée 🪴</h3>
+        <p class="preview">La conception d’un jardin, c’est imaginer un lieu vivant et cohérent, qui évolue bien dans le temps...</p>
+        <button class="open-modal" data-modal="modal-conception">En savoir plus</button>
+      </div>
+    </article>
+  
+    <!-- Bloc 3 : Entretien -->
+    <article class="conseil-bloc-white">
+      <div class="image">
+        <img src="images/entretien_jardin.jpg" alt="Entretien jardin">
+      </div>
+      <div class="titre-et-texte">
+        <h3>Entretien : les bons gestes, au bon moment ✂️</h3>
+        <p class="preview">Taille, tonte, paillage, arrosage… un jardin bien entretenu vit au rythme des saisons...</p>
+        <button class="open-modal" data-modal="modal-entretien">En savoir plus</button>
+      </div>
+    </article>
+  
+    <!-- Bloc 4 : Aménagement -->
+    <article class="conseil-bloc-green">
+        <div class="image">
+            <img src="images/amenagement_jardin.jpg" alt="Aménagement jardin">
+          </div>
+      <div class="titre-et-texte">
+        <h3>Aménagement : structurer l’espace intelligemment 🛠️</h3>
+        <p class="preview">Un bon aménagement prend en compte la circulation, la croissance des plantes et les besoins futurs...</p>
+        <button class="open-modal" data-modal="modal-amenagement">En savoir plus</button>
+      </div>
+    </article>
+  
+    <!-- Bloc 5 : Élagage -->
+    <article class="conseil-bloc-white">
+      <div class="image">
+        <img src="images/elagage_jardin.jpg" alt="Élagage arbre">
+      </div>
+      <div class="titre-et-texte">
+        <h3>Élagage : sécuriser, éclaircir, préserver 🌳</h3>
+        <p class="preview">Respecter la biologie de l’arbre (angle, période, cicatrisation)...</p>
+        <button class="open-modal" data-modal="modal-elagage">En savoir plus</button>
+      </div>
+    </article>
+  
+    <!-- Bloc 6 : Végétaux -->
+    <article class="conseil-bloc-green">
+        <div class="image">
+            <img src="images/vegetaux_jardin.webp" alt="Végétaux d'entretien">
+          </div>
+      <div class="titre-et-texte">
+        <h3>Quelques végétaux courants & périodes d’entretien 🌿</h3>
+        <p class="preview">Laurier, photinia, lavatère... chaque végétal a son moment idéal pour être taillé ou soigné...</p>
+        <button class="open-modal" data-modal="modal-vegetaux">En savoir plus</button>
+      </div>
+    </article>
+  
+    <!-- Bloc 7 : Conclusion -->
+    <article class="conseil-bloc-white">
+      <div class="image">
+        <img src="images/geste_jardin.webp" alt="Bon geste jardin">
+      </div>
+      <div class="titre-et-texte">
+        <h3>Le bon geste, au bon moment</h3>
+        <p class="preview">Un jardin en bonne santé, ce n’est pas forcément beaucoup de travail : c’est surtout du bon sens...</p>
+        <button class="open-modal" data-modal="modal-conclusion">En savoir plus</button>
+      </div>
+    </article>
+
+    <!-- Bloc 8 : Végétaux -->
+    <article class="conseil-bloc-green">
+        <div class="image">
+            <img src="images/vegetaux_jardin.webp" alt="Végétaux d'entretien">
+          </div>
+      <div class="titre-et-texte">
+        <h3>Quelques végétaux courants & périodes d’entretien 🌿</h3>
+        <p class="preview">Laurier, photinia, lavatère... chaque végétal a son moment idéal pour être taillé ou soigné...</p>
+        <button class="open-modal" data-modal="modal-vegetaux">En savoir plus</button>
+      </div>
+    </article>
+
+    <!-- Bloc 9 : Conclusion -->
+    <article class="conseil-bloc-white">
+        <div class="image">
+          <img src="images/geste_jardin.webp" alt="Bon geste jardin">
+        </div>
+        <div class="titre-et-texte">
+          <h3>Le bon geste, au bon moment</h3>
+          <p class="preview">Un jardin en bonne santé, ce n’est pas forcément beaucoup de travail : c’est surtout du bon sens...</p>
+          <button class="open-modal" data-modal="modal-conclusion">En savoir plus</button>
+        </div>
+      </article>
+  
+  </section>
+  
+  <!-- MODALES -->
+<div id="modal-intro" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Mes conseils pour un jardin vivant</h3>
+      <p>Parce qu’un jardin ne se limite pas à sa beauté, mais reflète aussi le soin, l’intention et l’expérience qu’on y met...</p>
+      <p>Quand tailler, comment arroser, quels végétaux choisir…</p>
+    </div>
+  </div>
+  
+  <div id="modal-conception" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Conception : penser son jardin dans la durée 🪴</h3>
+      <p>La conception d’un jardin, c’est imaginer un lieu vivant et cohérent...</p>
+      <p>Observer, structurer, équilibrer les volumes, adapter les plantes au lieu.</p>
+    </div>
+  </div>
+  
+  <div id="modal-entretien" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Entretien : les bons gestes, au bon moment ✂️</h3>
+      <ul>
+        <li><strong>Taille :</strong> selon les espèces et les saisons</li>
+        <li><strong>Tonte :</strong> haute en été, régulière au printemps</li>
+        <li><strong>Paillage :</strong> pour retenir l’humidité et limiter les adventices</li>
+        <li><strong>Arrosage :</strong> ciblé, aux bonnes heures</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modal-amenagement" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Aménagement : structurer intelligemment 🛠️</h3>
+      <ul>
+        <li>Créer des circulations logiques</li>
+        <li>Prévoir la croissance des végétaux</li>
+        <li>Éviter les débordements futurs</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modal-elagage" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Élagage : sécuriser, éclaircir, préserver 🌳</h3>
+      <ul>
+        <li>Respecter la biologie de l’arbre</li>
+        <li>Éviter les chocs mécaniques</li>
+        <li>Réduire les risques sans affaiblir la structure</li>
+      </ul>
+      <p><strong>⚠️ Une coupe mal placée peut affaiblir un arbre durablement.</strong></p>
+    </div>
+  </div>
+  
+  <div id="modal-vegetaux" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Quelques végétaux & périodes d’entretien 🌿</h3>
+      <ul>
+        <li>Laurier rose : après floraison</li>
+        <li>Photinia : juin / septembre</li>
+        <li>Rosiers : fin d’hiver</li>
+        <li>Olivier : tous les deux ans (mars-avril)</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="modal-conclusion" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Le bon geste, au bon moment</h3>
+      <p>Un jardin équilibré demande un peu d’attention, mais surtout une écoute active du vivant. Inspirez-vous des saisons pour bien faire.</p>
+    </div>
+  </div>
+
+<!-- SECTION CONTACT -->
+<section id="contact">
+    <div class="contact-banner">
+        <h2>CONTACT</h2>
+    </div>
+    <div class="contact-content">
+        <div class="contact-image">
+            <img src="images/palm.png" alt="Plante décorative">
+        </div>
+    </div>
+
+    <!-- Infos Contact -->
+    <div class="contact-intro">
+        <p>Échangeons autour de votre projet 🌱<br>Je suis à votre écoute pour toutes questions ou demandes.</p>
+    </div>
+    <div class="mail-container">
+        <p class="mail">Cliquez ci-dessous pour écrire un mail ⬇️</p>
+    </div>
+    <a href="mailto:votreemail@example.com" class="contact-card email-link">
+        <div class="contact-icon">
+            <img src="images/envelope-regular.svg" alt="contact">
+        </div>
+        <div class="contact-info">
+            <p><strong>Jacquet Romain (Gérant)</strong><br>
+                Téléphone : 06.74.87.04.82<br>
+                Email : ton-email@gmail.com<br>
+                Orléans (45)</p>
+        </div>
+    </a>
+
+    <a href="tel:+33674870482" class="contact-card tel-link">
+        <div class="contact-icon">
+            <img src="images/phone-solid.svg" alt="téléphone">
+        </div>
+        <div class="contact-info">
+            <p><strong>Jacquet Romain (Gérant)</strong><br>
+                Téléphone : 06.74.87.04.82<br>
+                Email : ton-email@gmail.com<br>
+                Orléans (45)</p>
+        </div>
+    </a>
+
+    <div class="contact-btn-container">
+        <a href="mailto:votreemail@example.com" class="contact-btn">Lancez votre projet</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/banière.png" alt="Bannière du site" class="banner-footer">
+    <div class="footer-content">
+        <a href="index.html">
+            <img src="images/logo_transparent.png" alt="Logo de l'entreprise" class="logo-footer">
+        </a>
+    </div>
+    <p class="footer-rights">© 2024 Jacquet Jardin | Développement web par CREAVITY - creavity.web@gmail.com - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>

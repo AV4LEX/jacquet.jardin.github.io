@@ -107,7 +107,7 @@ ul {
     background: linear-gradient(90deg, #B9926E, #534231); 
     box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1); 
     z-index: 2500;
-    width: 100%;
+    width: 100.08%;
     min-height: 40px;
 }
 
@@ -393,7 +393,7 @@ ul {
 }
 
 .service {
-    background: rgba(255, 255, 255, 0.25); 
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf5); 
     border-radius: 32px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px); 
@@ -620,7 +620,7 @@ ul {
 
 /* Image contact */
 .contact-image {
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: flex-end;
     margin-bottom: -400px;
@@ -650,7 +650,7 @@ ul {
 
 /* Carte de contact */
 .contact-card {
-    background: rgba(255, 255, 255, 0.25); 
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf5); 
     border-radius: 32px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px); 
@@ -695,7 +695,7 @@ ul {
 /* Texte d'info de contact */
 .contact-info p {
     font-size: 18px;
-    color: #223B3F;
+    color: #333;
     margin: 0;
     font-weight: 500;
 }

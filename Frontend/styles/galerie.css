@@ -89,7 +89,8 @@
     flex-direction: column;
     justify-content: space-between;
     height: 280px;
-    background: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 
     border-radius: 32px;
     overflow: visible; /* <-- CHANGE overflow hidden en visible pour que l'ombre s'affiche */
