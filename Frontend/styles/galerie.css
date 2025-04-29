@@ -22,6 +22,7 @@
     font-size: 18px;
     line-height: 1.6;
     padding: 20px;
+    color: #223B3F;
 }
 
 /* Boutons de tri */
@@ -130,6 +131,7 @@
 
 .contact-banner h2{
     font-size: 18px !important;
+    color: #223B3F;
 }
 
 /* Version mobile : Ajuster la hauteur des cartes */
