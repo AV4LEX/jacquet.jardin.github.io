@@ -1,19 +1,33 @@
-document.querySelectorAll('.open-modal').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const modal = document.getElementById(btn.dataset.modal);
-      if (modal) modal.style.display = 'block';
-    });
-  });
+// Cibler tous les boutons qui ouvrent des modales
+const openButtons = document.querySelectorAll('.open-modal');
+const modals = document.querySelectorAll('.modal');
+const closeButtons = document.querySelectorAll('.close');
 
-  document.querySelectorAll('.modal .close').forEach(closeBtn => {
-    closeBtn.addEventListener('click', () => {
-      closeBtn.closest('.modal').style.display = 'none';
-    });
+// Fonction pour ouvrir la modale
+openButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    const modalId = button.getAttribute('data-modal');
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'block';  // Affiche la modale
+    document.body.style.overflow = 'hidden';  // Désactive le scroll sur le body
   });
+});
 
-  window.addEventListener('click', e => {
-    if (e.target.classList.contains('modal')) {
-      e.target.style.display = 'none';
+// Fonction pour fermer la modale
+closeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    modal.style.display = 'none';  // Cache la modale
+    document.body.style.overflow = 'auto';  // Réactive le scroll sur le body
+  });
+});
+
+// Fermer la modale en cliquant en dehors du contenu de la modale
+modals.forEach(modal => {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';  // Réactive le scroll sur le body
     }
   });
-
+});

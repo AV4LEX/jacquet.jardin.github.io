@@ -13,7 +13,7 @@
   .intro-content {
     max-width: 800px; /* Limite la largeur du texte */
     margin-top: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     z-index: 2;
   }
   
@@ -107,7 +107,7 @@
   /* Thèmes de couleurs */
   .conseil-bloc-white {
     background: linear-gradient(135deg, #f5f7fa, #e4ecf5);
-    color: #1d2d35;
+    color: #223B3F;
   }
   
   .conseil-bloc-green {
@@ -141,17 +141,10 @@
     font-weight: 600;
   }
   
-  .titre-et-texte h2 {
+  .titre-et-texte h2, h3, h4 {
     font-size: 1.6em;
   }
   
-  .titre-et-texte h3 {
-    font-size: 1.6em;
-  }
-  
-  .titre-et-texte h4 {
-    font-size: 1.6em;
-  }
   
   .titre-et-texte p,
   .titre-et-texte li {
@@ -165,7 +158,7 @@
   }
   
   .titre-et-texte li::marker {
-    color: #6bbf74; /* Marqueur vert doux */
+    color: #223B3F; /* Marqueur vert doux */
   }
   
   /* ✅ Contenu court (aperçu tronqué à 3 lignes) */
@@ -173,7 +166,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
   
@@ -198,8 +190,8 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   }
   
-  /* ✅ MODALE */
-  .modal {
+ /* ✅ MODALE */
+.modal {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -207,27 +199,123 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.5s linear, visibility 0.5s linear;
+    backdrop-filter: blur(5px);
   }
   
   .modal-content {
-    background-color: #f0f9f8;
-    margin: 10% auto;
-    padding: 20px;
-    width: 70%;
-    border-radius: 12px;
-    font-family: 'Klee One', cursive;
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf5); /* Dégradé similaire aux cartes */
+    margin: 5% auto;
+    width: 40%;
+    
+    max-height: 85vh;
+    overflow-y: auto;
     position: relative;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Ombre légère comme sur les cartes */
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
-  .modal .close {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+  .modal.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
   }
+  
+  .modal-content.open {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  
+  /* Image dans la modale */
+  .modal-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .modal-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    
+  }
+  
+  /* Fermeture de la modale */
+  .close {
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    background-color: #223B3F;
+    border: 1px solid white;
+    border-radius: 50%; /* Rendre le fond circulaire */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-bottom: 4px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: background-color 0.4s linear, transform 0.4s linear;
+  }
+  
+  .close:hover {
+    background-color: white;
+    color: #223B3F;
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+  }
+  
+  .close:active {
+    transform: scale(0.95); /* Réduction lors du clic */
+  }
+  
+  /* Contenu texte de la modale */
+  .modal-content h3 {
+    font-size: 1.6em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #223B3F;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 20px;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #223B3F;
+    padding: 20px;
+  }
+
+  .modal-btn{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+
+  
+  /* ✅ Responsive */
+  @media screen and (max-width: 1024px) {
+    .modal-content {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+    }
+  }
+  
+  
+
   
   /* ✅ Responsive */
   @media screen and (max-width: 1024px) {

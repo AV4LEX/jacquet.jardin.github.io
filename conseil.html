@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="Frontend/styles/mobile.css" media="(max-width: 768px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="body-no-scroll">
 
 <!-- BANNIÈRE -->
 <header class="banner">
@@ -75,7 +75,7 @@
       </div>
       <div class="titre-et-texte">
         <h2>Mes conseils pour un jardin vivant, bien pensé et durable</h2>
-        <p class="preview">Parce qu’un jardin ne se limite pas à sa beauté, mais reflète aussi le soin, l’intention et l’expérience qu’on y met, voici quelques repères utiles ...</p>
+        <p class="preview">Saviez-vous qu'un jardin peut attirer jusqu'à 30% de biodiversité en plus s'il est conçu de manière réfléchie ? Un jardin vivant n'est pas seulement un espace extérieur où l'on...</p>
         <button class="open-modal" data-modal="modal-intro">En savoir plus</button>
       </div>
     </article>
@@ -179,14 +179,30 @@
   </section>
   
   <!-- MODALES -->
-<div id="modal-intro" class="modal">
+  <div id="modal-intro" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h3>Mes conseils pour un jardin vivant</h3>
-      <p>Parce qu’un jardin ne se limite pas à sa beauté, mais reflète aussi le soin, l’intention et l’expérience qu’on y met...</p>
-      <p>Quand tailler, comment arroser, quels végétaux choisir…</p>
+      <div class="modal-image">
+        <img src="images/jardin_vivant.jpg" alt="Jardin vivant">
+      </div>
+      <h3>Mes conseils de paysagiste pour un jardin vivant</h3>
+  
+      <p><em>"Saviez-vous qu'un jardin peut attirer jusqu'à 30% de biodiversité en plus s'il est conçu de manière réfléchie ?"</em> Un jardin vivant n'est pas seulement un espace extérieur où l'on cultive des plantes, c'est un véritable écosystème qui peut bénéficier à la faune locale et améliorer votre qualité de vie. En tant que <strong>paysagiste à Orléans</strong>, je vous invite à découvrir comment vous pouvez transformer votre jardin en un havre de biodiversité et de beauté durable.</p>
+  
+      <p>Le premier conseil que je donne toujours est de miser sur des <strong>plantes adaptées à votre environnement</strong>. Choisir des variétés locales ou bien adaptées à votre climat est essentiel pour un jardin qui nécessite moins d’entretien, d’arrosage et qui respecte l’écosystème local. Lavande, romarin, arbres fruitiers rustiques et graminées sont des choix parfaits. Non seulement elles embellissent votre jardin, mais elles attirent aussi une faune locale bénéfique, comme les abeilles et les papillons.</p>
+  
+      <p>Un autre aspect crucial pour un jardin vivant est de laisser de la place à la <strong>biodiversité</strong>. Trop souvent, nous avons tendance à vouloir un jardin trop "propre". Cependant, la nature a besoin d'un peu de désordre pour prospérer. Ajouter des éléments comme un coin de fleurs sauvages, un tas de bois, un hôtel à insectes ou même un nichoir pour les oiseaux peut faire une grande différence. Ces petites touches permettront à la faune locale de s'installer et d'apporter un équilibre naturel à votre jardin.</p>
+  
+      <p>Enfin, l'<strong>aménagement du jardin</strong> doit aussi respecter la nature. Vous pouvez par exemple utiliser des sentiers en gravier, des murets en pierres sèches ou encore des petits bassins naturels. Ces éléments permettent de créer un microclimat favorable à la biodiversité et ajoutent une touche esthétique à votre jardin. Un aménagement qui respecte l’écosystème apportera une belle harmonie à l'ensemble de votre espace.</p>
+  
+      <p><strong>Vous avez envie d’un jardin vivant à Orléans ?</strong><br>Je vous propose un accompagnement personnalisé pour réaliser un jardin unique, respectueux de la nature. <br></p>
+        <div class="modal-btn">
+            <a href="mailto:votreemail@example.com" class="contact-btn">Envoyer un email</a>
+        </div>
     </div>
   </div>
+  
+  
   
   <div id="modal-conception" class="modal">
     <div class="modal-content">
