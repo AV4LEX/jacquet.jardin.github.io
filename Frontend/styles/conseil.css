@@ -300,6 +300,10 @@
     margin-top: 40px;
   }
 
+  body.modal-open {
+    overflow: hidden;
+}
+
   
   /* ✅ Responsive */
   @media screen and (max-width: 1024px) {
