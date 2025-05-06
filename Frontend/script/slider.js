@@ -38,6 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
         autoScroll = setInterval(() => {
             index = (index + 1) % totalSlides;
             updateCarousel();
-        }, 4000);
+        }, 5000);
     });
 });
