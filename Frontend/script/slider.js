@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let index = 0;
     const totalSlides = slides.length;
+    let autoScroll;
 
     function updateCarousel() {
         const offset = -index * 100; // Décalage en pourcentage
@@ -22,11 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCarousel();
     });
 
-    // Défilement automatique toutes les 3 secondes
-    let autoScroll = setInterval(() => {
-        index = (index + 1) % totalSlides;
-        updateCarousel();
-    }, 4000);
+    function startAutoScroll() {
+        autoScroll = setInterval(() => {
+            // Si la vidéo est visible et en cours de lecture, on n'active pas l'auto-scroll
+            const currentSlide = slides[index];
+            const video = currentSlide.querySelector("video");
+            if (video && !video.paused) {
+                return; // Ne pas faire défiler si la vidéo est en lecture
+            }
+
+            index = (index + 1) % totalSlides; // Passe à la prochaine slide
+            updateCarousel();
+        }, 4000);
+    }
+
+    // Démarrer l'auto-scroll
+    startAutoScroll();
 
     // Arrêter l'auto-scroll lorsque la souris est dessus
     document.querySelector(".carousel").addEventListener("mouseenter", () => {
@@ -35,9 +47,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reprendre l'auto-scroll lorsque la souris quitte le carrousel
     document.querySelector(".carousel").addEventListener("mouseleave", () => {
-        autoScroll = setInterval(() => {
-            index = (index + 1) % totalSlides;
-            updateCarousel();
-        }, 5000);
+        startAutoScroll();
+    });
+
+    // Arrêter l'auto-scroll si une vidéo est lue et redémarrer si elle est terminée
+    document.querySelector(".carousel").addEventListener("click", () => {
+        const currentSlide = slides[index];
+        const video = currentSlide.querySelector("video");
+
+        if (video) {
+            // Si la vidéo est en cours de lecture, on la met en pause
+            if (!video.paused) {
+                video.pause();
+                // Redémarrer l'auto-scroll après la vidéo
+                startAutoScroll();
+            }
+        }
     });
 });
