@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".carousel-slide");
     const prevButton = document.querySelector(".prev");
     const nextButton = document.querySelector(".next");
+    const mailtoButton = document.querySelector(".contact-btn"); // Sélectionner le bouton mailto
 
     let index = 0;
     const totalSlides = slides.length;
@@ -25,13 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function startAutoScroll() {
         autoScroll = setInterval(() => {
-            // Si la vidéo est visible et en cours de lecture, on n'active pas l'auto-scroll
             const currentSlide = slides[index];
             const video = currentSlide.querySelector("video");
             if (video && !video.paused) {
                 return; // Ne pas faire défiler si la vidéo est en lecture
             }
-
             index = (index + 1) % totalSlides; // Passe à la prochaine slide
             updateCarousel();
         }, 4000);
@@ -50,18 +49,23 @@ document.addEventListener("DOMContentLoaded", function () {
         startAutoScroll();
     });
 
-    // Arrêter l'auto-scroll si une vidéo est lue et redémarrer si elle est terminée
-    document.querySelector(".carousel").addEventListener("click", () => {
-        const currentSlide = slides[index];
-        const video = currentSlide.querySelector("video");
-
+    // Fonction pour mettre en pause la vidéo
+    function pauseVideo() {
+        const video = document.querySelector('video'); // Chercher la vidéo dans le carrousel
         if (video) {
-            // Si la vidéo est en cours de lecture, on la met en pause
-            if (!video.paused) {
-                video.pause();
-                // Redémarrer l'auto-scroll après la vidéo
-                startAutoScroll();
-            }
+            video.pause(); // Met la vidéo en pause
+        }
+    }
+
+    // Lorsque le bouton mailto est cliqué, on met la vidéo en pause
+    mailtoButton.addEventListener("click", (event) => {
+        pauseVideo(); // Met la vidéo en pause
+    });
+
+    window.addEventListener('focus', () => {
+        const video = document.querySelector('video');
+        if (video && video.paused) {
+            video.play(); // Redémarrer la vidéo si elle était en pause
         }
     });
 });
