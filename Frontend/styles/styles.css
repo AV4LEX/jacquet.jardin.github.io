@@ -422,6 +422,9 @@ ul {
     align-items: center;
 
     height: 170px; 
+
+    text-decoration: none;
+    color: inherit;
     
 }
 
