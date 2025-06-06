@@ -348,6 +348,7 @@ ul {
 /* SECTION CONCEPTION */
 #conception {
     background-color: #D9D9D9;
+    padding-bottom: 60px;
     
 }
 
@@ -399,7 +400,7 @@ ul {
     gap: 40px;
     padding: 20px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    
 }
 
 .service {
@@ -460,7 +461,6 @@ ul {
     box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
     padding-top: 20px;
     padding-bottom: 40px;
-    margin-top: 40px;
     color: white;
     gap: 100px;
 }
@@ -503,8 +503,10 @@ ul {
     display: flex;
     gap: 50px;
     padding-top: 40px;
+    padding-bottom: 40px;
     color: black;
     flex-direction: row-reverse; 
+    background-color: #D9D9D9;
 }
 
 .image-amenagement {
@@ -548,7 +550,6 @@ ul {
     box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1);
     padding-top: 20px;
     padding-bottom: 40px;
-    margin-top: 40px;
     color: white;
     gap: 100px;
 }
